@@ -120,3 +120,5 @@ function startTour(category) {
 document.addEventListener('DOMContentLoaded', () => {
     displayPlants();
 });
+
+
