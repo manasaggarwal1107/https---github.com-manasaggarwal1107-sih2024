@@ -47,7 +47,6 @@ const plants = [
         audio: 'assets/peppermint.mp3',
         category: 'digestive'
     },
-    // Add more plants as needed
 ];
 
 function displayPlants() {
