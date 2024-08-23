@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/GLTFLoader.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Virtual Herbal Garden</h1>
+        <nav>
+            <ul>
+                <li><a href="#explore">Explore Plants</a></li>
+                <li><a href="#tours">Virtual Tours</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="explore">
+        <h2>Explore Plants</h2>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for plants...">
+            <button onclick="searchPlants()">Search</button>
+        </div>
+        <div id="plant-list">
+            <!-- Plant items will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <section id="tours">
+        <h2>Virtual Tours</h2>
+        <button onclick="startTour('digestive')">Digestive Health</button>
+        <button onclick="startTour('immunity')">Immunity Boosting</button>
+        <button onclick="startTour('skincare')">Skin Care</button>
+        <div id="tour-content">
+            <!-- Tour content will be displayed here -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about the AYUSH sector and the significance of medicinal plants.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Virtual Herbal Garden</p>
+    </footer>
+</body>
+</html>
