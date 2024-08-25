@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ministry of AYUSH</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #004d40; color: white; padding: 10px 0; text-align: center; }
+        main { padding: 20px; }
+        h1 { font-size: 2em; margin-bottom: 10px; }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        section {
+            margin-bottom: 20px;
+            color: white;
+            background-color: #004d40;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background-color: #004d40;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contact-form button:hover {
+            background-color: #00332e;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevents the default form submission
+            alert('Your query has been submitted. We will get in touch with you soon.');
+            // Optionally clear the form fields after submission
+            document.getElementById('contact-form').reset();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ministry of AYUSH</h1>
+        <nav>
+                    
+            <a href="about.html">Back</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form" class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="email" id="email" name="email" placeholder="Email ID" required>
+                <input type="tel" id="contact-number" name="contact-number" placeholder="Contact Number" required>
+                <textarea id="description" name="description" rows="4" placeholder="Description" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

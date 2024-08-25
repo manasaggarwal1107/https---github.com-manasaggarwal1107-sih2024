@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of AYUSH</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #004d40; color: white; padding: 10px 0; text-align: center; }
+        main { padding: 20px; }
+        h1 { font-size: 2em; margin-bottom: 10px; }
+        
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        
+        section {
+            margin-bottom: 20px;
+            color: white; 
+            background-color: #004d40; 
+            padding: 20px;
+            border-radius: 5px;
+        }
+        section.contact {
+            background-color: #004d40; 
+        }
+        
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover { background-color: #ddd; }
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown:hover .dropdown-button { background-color: #45a049; }
+        .dropdown-button {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ministry of AYUSH</h1>
+        <nav>
+            <a href="#about">About</a> | 
+            <a href="#initiatives">Schemes</a> | 
+            <a href="#contact">Contact</a> |            
+            <a href="index.html">Home</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The Ministry of Ayush was formed on the 9th of November 2014 with a vision of reviving the profound knowledge of our ancient systems of medicine and ensuring the optimal development and propagation of the Ayush systems of healthcare. Earlier, the Department of Indian System of Medicine and Homoeopathy (ISM&H) formed in 1995, was responsible for the development of these systems. It was then renamed as the Department of Ayurveda, Yoga, and Naturopathy, Unani, Siddha and Homoeopathy (Ayush) in November 2003 with focused attention towards education and research in Ayurveda, Yoga and Naturopathy, Unani, Siddha, and Homoeopathy.</p>
+        </section>
+        <section id="initiatives">
+            <h2>Schemes</h2>
+            <div class="dropdown">
+                <button class="dropdown-button">View Schemes</button>
+                <div class="dropdown-content">
+                    <a href="center-sector-scheme.html">Center Sector Scheme</a>
+                    <a href="centrally-sponsored-scheme.html">Centrally Sponsored Scheme</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Contact us at  <a href="mailto:info@ayush.gov.in" style="color: white;">email</a> or fill the form <a href="#" style="color: white;"><a href="contact.html">Contact Page</a></a>.</p>
+        </section>
+    </main>
+</body>
+</html>
+
