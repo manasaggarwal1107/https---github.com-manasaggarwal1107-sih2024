@@ -49,7 +49,7 @@ const methodologies = [
     {
         name: 'Yoga',
         img: 'https://cdn.policyx.com/cms-media/beginner-yoga-asanas-for-everyday-main-banner297-1721192874.webp', 
-        description: 'Yoga is an ancient practice that combines the body, breath, and mind through physical postures, breathing exercises, and meditation to improve overall health and well-being.'
+        description: 'The word \'Yoga\' comes from the Sanskrit word \'yuj\' which means \'to unite or integrate\'. Yoga is about the union of a person\'s own consciousness and the universal consciousness. Naturopathy is a cost effective drugless, non-invasive therapy involving the use of natural materials for health care and healthy living.'
     }
 ];
 
