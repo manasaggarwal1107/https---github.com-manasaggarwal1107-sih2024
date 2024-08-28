@@ -11,15 +11,21 @@
 </head>
 <body>
     <header>
-        <h1>Virtual Herbal Garden</h1>
-        <nav>
-            <ul>
-                <li><a href="#explore">Explore Plants</a></li>
-                <li><a href="#tours">Virtual Tours</a></li>
-                <li><a href="about.html">About</a></li> 
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3S7XVEKFHWbgIGSSvbG-DUJw4L3BBNCZoEA&s" alt="Ministry of AYUSH Logo" class="logo logo-left">
+            <h1>Virtual Herbal Garden</h1>
+            <img src="https://w7.pngwing.com/pngs/150/388/png-transparent-g20-india-2023-thumbnail.png" alt="G20 Logo" class="logo logo-right">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#explore">Explore Plants</a></li>
+                    <li><a href="#tours">Virtual Tours</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section id="explore">
@@ -27,6 +33,12 @@
         <div class="search-bar">
             <input type="text" id="search-input" placeholder="Search for plants...">
             <button onclick="searchPlants()">Search</button>
+        </div>
+        
+        <div id="methodology-slider" class="slider-container">
+            <div class="slider">
+                
+            </div>
         </div>
         <div id="plant-list">
             
@@ -43,10 +55,27 @@
         </div>
     </section>
 
-   
-
     <footer>
         <p>&copy; 2024 Virtual Herbal Garden</p>
     </footer>
+
+    <div id="chat-widget">
+        <div id="chat-header">
+            <h3>Virtual Assistant</h3>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div id="chat-body">
+            <div id="chat-messages">
+                
+            </div>
+            <div>
+                <input type="text" id="user-input" placeholder="Ask your query....">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <button id="toggle-chat-button">Help</button>
+
 </body>
 </html>
