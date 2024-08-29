@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVirtual Herbal Garden Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #00ffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .rating-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .rating-group input {
+            margin-right: 5px;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    
+        <nav>
+            <a href="index.html">Back</a>
+        </nav>
+    
+    <div class="container">
+        <h1> Feedback Form</h1>
+        <p>We appreciate your feedback as it helps us improve our services. Please take a moment to fill out this form.</p>
+        <form id="feedbackForm" action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label>How often do you visit the Virtual Herbal Garden website?</label>
+            <input type="radio" id="daily" name="visit_frequency" value="Daily">
+            <label for="daily">Daily</label>
+            <input type="radio" id="weekly" name="visit_frequency" value="Weekly">
+            <label for="weekly">Weekly</label>
+            <input type="radio" id="monthly" name="visit_frequency" value="Monthly">
+            <label for="monthly">Monthly</label>
+            <input type="radio" id="rarely" name="visit_frequency" value="Rarely">
+            <label for="rarely">Rarely</label>
+            <input type="radio" id="first_visit" name="visit_frequency" value="First Visit">
+            <label for="first_visit">This is my first visit</label>
+            
+            <label>What is the purpose of your visit? </label>
+            <input type="checkbox" id="info" name="purpose" value="Seeking information about medicinal plants">
+            <label for="info">Seeking information about medicinal plants</label>
+            <input type="checkbox" id="guidelines" name="purpose" value="Finding health guidelines and recommendations">
+            <label for="guidelines">Finding health guidelines and recommendations</label>
+            <input type="checkbox" id="schemes" name="purpose" value="Finding about government schemes and policies">
+            <label for="schemes">Finding about government schemes and policies</label>
+            <input type="checkbox" id="contact" name="purpose" value="Contacting the ministry or officials">
+            <label for="contact">Contacting the ministry or officials</label>
+            <input type="checkbox" id="other" name="purpose" value="Other">
+            <label for="other">Other (Please specify):</label>
+            <input type="text" id="other_description" name="other_description">
+            
+            <label>How would you rate the following aspects of the website? (1 = Very Poor, 5 = Excellent)</label>
+            
+            <label for="navigation">Navigation:</label>
+            <div class="rating-group">
+                <input type="radio" id="nav_1" name="ease_navigation" value="1">
+                <label for="nav_1">1</label>
+                <input type="radio" id="nav_2" name="ease_navigation" value="2">
+                <label for="nav_2">2</label>
+                <input type="radio" id="nav_3" name="ease_navigation" value="3">
+                <label for="nav_3">3</label>
+                <input type="radio" id="nav_4" name="ease_navigation" value="4">
+                <label for="nav_4">4</label>
+                <input type="radio" id="nav_5" name="ease_navigation" value="5">
+                <label for="nav_5">5</label>
+            </div>
+            
+            <label for="clarity">Clarity of Information:</label>
+            <div class="rating-group">
+                <input type="radio" id="clarity_1" name="clarity_information" value="1">
+                <label for="clarity_1">1</label>
+                <input type="radio" id="clarity_2" name="clarity_information" value="2">
+                <label for="clarity_2">2</label>
+                <input type="radio" id="clarity_3" name="clarity_information" value="3">
+                <label for="clarity_3">3</label>
+                <input type="radio" id="clarity_4" name="clarity_information" value="4">
+                <label for="clarity_4">4</label>
+                <input type="radio" id="clarity_5" name="clarity_information" value="5">
+                <label for="clarity_5">5</label>
+            </div>
+            
+            <label for="design">Design and Layout:</label>
+            <div class="rating-group">
+                <input type="radio" id="design_1" name="design_layout" value="1">
+                <label for="design_1">1</label>
+                <input type="radio" id="design_2" name="design_layout" value="2">
+                <label for="design_2">2</label>
+                <input type="radio" id="design_3" name="design_layout" value="3">
+                <label for="design_3">3</label>
+                <input type="radio" id="design_4" name="design_layout" value="4">
+                <label for="design_4">4</label>
+                <input type="radio" id="design_5" name="design_layout" value="5">
+                <label for="design_5">5</label>
+            </div>
+            
+            <label for="loading">Likelyhood that you will return to this website:</label>
+            <div class="rating-group">
+                <input type="radio" id="loading_1" name="loading_speed" value="1">
+                <label for="loading_1">1</label>
+                <input type="radio" id="loading_2" name="loading_speed" value="2">
+                <label for="loading_2">2</label>
+                <input type="radio" id="loading_3" name="loading_speed" value="3">
+                <label for="loading_3">3</label>
+                <input type="radio" id="loading_4" name="loading_speed" value="4">
+                <label for="loading_4">4</label>
+                <input type="radio" id="loading_5" name="loading_speed" value="5">
+                <label for="loading_5">5</label>
+            </div>
+            
+            <label for="issues">Did you encounter any issues or difficulties while using the website? (Please describe)</label>
+            <textarea id="issues" name="issues" rows="4"></textarea>
+            
+            <label for="features">Are there any features or information you would like to see added or improved on the website? (Please specify)</label>
+            <textarea id="features" name="features" rows="4"></textarea>
+            
+            <label for="satisfaction">Overall, how satisfied are you with the Virtual Herbal Garden website?</label>
+            <select id="satisfaction" name="satisfaction">
+                <option value="Very Satisfied">Very Satisfied</option>
+                <option value="Satisfied">Satisfied</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Unsatisfied">Unsatisfied</option>
+                <option value="Very Unsatisfied">Very Unsatisfied</option>
+            </select>
+            
+            <label for="comments">Additional Comments or Suggestions:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+            <label>Would you like to be contacted regarding your feedback?</label>
+            <input type="radio" id="contact_yes" name="contact_permission" value="Yes">
+            <label for="contact_yes">Yes</label>
+            <input type="radio" id="contact_no" name="contact_permission" value="No">
+            <label for="contact_no">No</label>
+            
+            
+            
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+    
+    <script>
+        
+
+        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your response has been submitted');
+        });
+    </script>
+</body>
+</html>

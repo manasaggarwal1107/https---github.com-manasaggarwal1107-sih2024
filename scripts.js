@@ -5,7 +5,7 @@ const plants = [
         botanicalName: 'Aloe barbadensis miller',
         commonNames: ['Aloe', 'Aloe Vera'],
         uses: ['Skin care', 'Digestive health'],
-        img: 'https://media.istockphoto.com/id/171384767/photo/aloe-vera-plant-growth-in-farm.jpg?s=612x612&w=0&k=20&c=O5RciB1rLnEp99_9wPl-EB5pdeEmABe8Rt1oVTbLJ20=' 
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVC-8a0wSWBjWyCjxH8OuufiY0jN5tvgtTFA&s' 
     },
     {
         name: 'Basil',
