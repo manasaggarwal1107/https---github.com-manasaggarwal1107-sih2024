@@ -21,15 +21,16 @@
     .header-content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .logo {
         height: 100px; 
-        margin: 0.5rem 0;
+        margin: 0.5rem ;
     }
 
     .nav-container {
-        margin-top: 1rem; 
+        margin-top: 1rem;
     }
 
     nav ul {
